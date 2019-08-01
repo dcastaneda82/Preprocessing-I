@@ -152,58 +152,58 @@ body {
     flex-direction: column;
 
     animation: fadein 2s;
-				-moz-animation: fadein 2s;
-				/* Firefox */
-				-webkit-animation: fadein 2s;
-				/* Safari and Chrome */
-				-o-animation: fadein 2s;
-				/* Opera */
+    -moz-animation: fadein 2s;
+    /* Firefox */
+    -webkit-animation: fadein 2s;
+    /* Safari and Chrome */
+    -o-animation: fadein 2s;
+    /* Opera */
 
-				@keyframes fadein {
-					from {
-						opacity: 0;
-					}
+    @keyframes fadein {
+        from {
+            opacity: 0;
+        }
 
-					to {
-						opacity: 1;
-					}
-				}
+        to {
+            opacity: 1;
+        }
+    }
 
-				@-moz-keyframes fadein {
+    @-moz-keyframes fadein {
 
-					/* Firefox */
-					from {
-						opacity: 0;
-					}
+        /* Firefox */
+        from {
+            opacity: 0;
+        }
 
-					to {
-						opacity: 1;
-					}
-				}
+        to {
+            opacity: 1;
+        }
+    }
 
-				@-webkit-keyframes fadein {
+    @-webkit-keyframes fadein {
 
-					/* Safari and Chrome */
-					from {
-						opacity: 0;
-					}
+        /* Safari and Chrome */
+        from {
+            opacity: 0;
+        }
 
-					to {
-						opacity: 1;
-					}
-				}
+        to {
+            opacity: 1;
+        }
+    }
 
-				@-o-keyframes fadein {
+    @-o-keyframes fadein {
 
-					/* Opera */
-					from {
-						opacity: 0;
-					}
+        /* Opera */
+        from {
+            opacity: 0;
+        }
 
-					to {
-						opacity: 1;
-					}
-				}
+        to {
+            opacity: 1;
+        }
+    }
 
     @media (min-width: 800px) {
         width: 100%;
@@ -234,7 +234,7 @@ body {
             margin: 0 0 0 0;
 
             @media (min-width: 800px) {
-                
+
                 font-size: 7rem;
             }
         }
@@ -263,9 +263,9 @@ body {
         display: flex;
         flex-direction: column;
         font-family: 'Varela Round', sans-serif;
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         color: rgb(0, 17, 255);
-        margin: 20px;
+        margin: 30px;
 
         li {
             margin: 10px;
@@ -279,6 +279,19 @@ body {
         @media (min-width: 800px) {
             font-size: 3rem;
         }
+    }
+}
 
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(219, 25, 25);
+
+
+    a, button {
+        padding: 0 5px 0 5px;
+        font-size: 1.7rem;
+        border-radius: 15px 15px 0 0;
+        width: 100%;
     }
 }

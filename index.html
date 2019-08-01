@@ -7,7 +7,9 @@
 
   <title>My Resume</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Caveat|Cinzel|Fira+Sans|Inconsolata|Julius+Sans+One|Maven+Pro|Montserrat|Mukta|Nunito|Oxygen|Playfair+Display+SC|Press+Start+2P|Varela+Round|Work+Sans&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Caveat|Cinzel|Fira+Sans|Inconsolata|Julius+Sans+One|Maven+Pro|Montserrat|Mukta|Nunito|Oxygen|Playfair+Display+SC|Press+Start+2P|Varela+Round|Work+Sans&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/index.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -22,18 +24,47 @@
       <h1>Daniel Castaneda</h1>
       <h2>Future Software Engineer</h2>
     </div>
+    <div class="drops">
+      <div class="dropdown">
 
-    <div class="dropdown">
-      <button id="myBtn" class="dropbtn">General Skillz</button>
-     
-      <div id="myDropdown" class="dropdown-content">
-        <a href="#FiS">Fluent in Spanish</a>
-        <a href="#PC+">Computer & PC maintenance savy</a>
-        <a href="#CCL">Hold a CCL/OCL and Army Trained</a>
+        <button id="myBtn" class="dropbtn">General Skillz</button>
+
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#FiS">Fluent in Spanish</a>
+          <a href="#PC+">Computer & PC maintenance savy</a>
+          <a href="#CCL">Hold a CCL/OCL and Army Trained</a>
+        </div>
+      </div>
+
+      <div class="dropdown2">
+
+        <button id="myBtn2" class="dropbtn2">Contact Me</button>
+
+        <div id="myDropdown2" class="dropdown-content2">
+          <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:125px"></textarea>
+
+            <input type="submit" value="Submit">
+          </form>
+        </div>
       </div>
     </div>
 
-    <div class="historyNav">
+    <div id="hideHist" class="historyNav">
       <h3>Previous Jerbs</h3>
       <nav>
         <a href="sykes.html">Sykes Work@Home</a>
@@ -44,16 +75,35 @@
           <a href="gwire.html">G Wireless</a>
       </nav>
     </div>
-  </header>
 
-   <script>document.getElementById("myBtn").onclick = function () {
+    <script>
+      document.getElementById("myBtn").onclick = function () {
         myFunction()
       };
-      
-      
+
       function myFunction() {
         document.getElementById("myDropdown").classList.toggle("show");
-      }</script>
+      }
+    </script>
+
+
+
+  </header>
+
+
+
+  </script>
+
+  <script>
+    document.getElementById("myBtn2").onclick = function () {
+      myFunction2()
+    };
+
+
+    function myFunction2() {
+      document.getElementById("myDropdown2").classList.toggle("show2");
+    }
+  </script>
 
 </body>
 
