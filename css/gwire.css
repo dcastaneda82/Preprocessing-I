@@ -1,0 +1,260 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+/*My code */
+.gwire {
+  background-image: linear-gradient(white, white, #db1919);
+  display: flex;
+  flex-direction: column;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  /* Firefox */
+  -webkit-animation: fadein 2s;
+  /* Safari and Chrome */
+  -o-animation: fadein 2s;
+  /* Opera */
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (min-width: 800px) {
+  .gwire {
+    width: 100%;
+  }
+}
+.gwire .GWire {
+  width: 60%;
+  margin: 0 0 20px 0;
+  align-self: center;
+}
+@media (min-width: 800px) {
+  .gwire .GWire {
+    width: 45%;
+    border: 0.5px solid blue;
+    image-rendering: optimizequality;
+    align-self: center;
+    margin: 30px 0 35px 0;
+  }
+}
+.gwire .jobInfo {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+.gwire .jobInfo h1 {
+  font-size: 2.1rem;
+  font-family: 'Nunito', sans-serif;
+  margin: 0 0 0 0;
+}
+@media (min-width: 800px) {
+  .gwire .jobInfo h1 {
+    font-size: 7rem;
+  }
+}
+.gwire .jobInfo h2 {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1.7rem;
+  align-self: center;
+  border-top: double;
+  margin: 10px 0 0 0;
+  padding: 10px 15px 0 15px;
+}
+@media (min-width: 800PX) {
+  .gwire .jobInfo h2 {
+    font-size: 3.5rem;
+    padding: 10px 60px 0 60px;
+    margin: 10px 0 0 0;
+  }
+}
+@media (min-width: 800px) {
+  .gwire .jobInfo {
+    margin: 30px 0 25px 0px;
+  }
+}
+.gwire .duties {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 1.5rem;
+  color: #0011ff;
+  margin: 20px;
+}
+.gwire .duties li {
+  margin: 10px;
+  text-shadow: white 1px 0 10px;
+}
+@media (min-width: 800px) {
+  .gwire .duties li {
+    padding: 10px 0 10px 0;
+  }
+}
+@media (min-width: 800px) {
+  .gwire .duties {
+    font-size: 3rem;
+  }
+}

@@ -1,1 +1,515 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+/* My code*/
+body .main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: url('../../Preprocessing-I/img/flatline.jpg') no-repeat center fixed;
+  background-size: cover;
+}
+@media (min-width: 800px) {
+  body .main {
+    width: 100%;
+  }
+}
+body .main .titleName {
+  display: flex;
+  flex-direction: column;
+  margin: 58px 0 15px 0;
+  padding: 60px 0 15px 0;
+}
+body .main .titleName h1 {
+  font-size: 7rem;
+  font-family: 'Cinzel', serif;
+  text-align: center;
+  color: white;
+  animation: fadein 5s;
+  -moz-animation: fadein 5s;
+  /* Firefox */
+  -webkit-animation: fadein 5s;
+  /* Safari and Chrome */
+  -o-animation: fadein 5s;
+  /* Opera */
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+body .main .titleName h2 {
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.3rem;
+  color: #ffffff;
+  animation: fadein 5s;
+  -moz-animation: fadein 5s;
+  /* Firefox */
+  -webkit-animation: fadein 5s;
+  /* Safari and Chrome */
+  -o-animation: fadein 5s;
+  /* Opera */
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+body .titleName,
+body .dropdown,
+body .historyNav {
+  align-self: center;
+}
+body .dropdown {
+  display: flex;
+  position: relative;
+  align-self: center;
+  flex-direction: column;
+  margin: 32px 0 25px 0;
+  animation: fadein 10s;
+  -moz-animation: fadein 10s;
+  /* Firefox */
+  -webkit-animation: fadein 10s;
+  /* Safari and Chrome */
+  -o-animation: fadein 10s;
+  /* Opera */
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+body .dropdown .dropbtn {
+  background-color: transparent;
+  color: #000000;
+  padding: 5px;
+  font-size: 2rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  align-self: center;
+  font-family: 'Nunito', sans-serif;
+  text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+}
+@media (min-width: 800px) {
+  body .dropdown .dropbtn {
+    margin: 10px 0 15px 0;
+  }
+}
+body .dropdown .dropbtn:hover {
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+body .dropdown .dropdown-content {
+  display: none;
+  position: inherit;
+  border-radius: 5px;
+  font-family: 'Josefin Sans', sans-serif;
+  min-width: 160px;
+  overflow: auto;
+  /*box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);*/
+  align-items: center;
+}
+body .dropdown .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+body .dropdown .dropdown-content a:hover {
+  color: #ffffff;
+  text-shadow: 1px 1px 2px #000000;
+  text-emphasis: 1px;
+}
+body .dropdown .show {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  font-family: 'Caveat', cursive;
+  font-size: 1.5rem;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.658);
+  animation: fadein 1s;
+  -moz-animation: fadein 1s;
+  /* Firefox */
+  -webkit-animation: fadein 1s;
+  /* Safari and Chrome */
+  -o-animation: fadein 1s;
+  /* Opera */
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (min-width: 800px) {
+  body .dropdown .show {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 800px) {
+  body .dropdown {
+    margin: 30px 0 0 0;
+  }
+}
+body .historyNav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.9rem;
+  margin: 15px 0 25px 0;
+  animation: fadein 10s;
+  -moz-animation: fadein 10s;
+  /* Firefox */
+  -webkit-animation: fadein 10s;
+  /* Safari and Chrome */
+  -o-animation: fadein 10s;
+  /* Opera */
+}
+@media (min-width: 800px) {
+  body .historyNav {
+    margin: 24px 0 50px 0;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+body .historyNav h3 {
+  font-family: 'Varela Round', sans-serif;
+  color: #353535;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 #e1e1e1, -1px 1px 0 black, 1px 1px 0;
+  font-size: 1.4rem;
+}
+@media (min-width: 800px) {
+  body .historyNav h3 {
+    font-size: 2.3rem;
+  }
+}
+body .historyNav nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 15px 0 0 0;
+  font-family: 'Montserrat', sans-serif;
+}
+@media (min-width: 800px) {
+  body .historyNav nav {
+    margin: 25px 0 0 0;
+  }
+}
+body .historyNav nav a {
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  font-size: 1.9rem;
+  background-image: radial-gradient(#ffffff, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0));
+  padding: 5px 0 6px 0;
+  margin: 10px 0 10px 0;
+  color: #0c4264;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+@media (min-width: 800px) {
+  body .historyNav nav a {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    border-radius: 25px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 3rem;
+  }
+}
+body .historyNav nav a:hover {
+  background-color: transparent;
+  background-image: none;
+  border: none;
+  text-shadow: white 1px 0 20px;
+  color: white;
+}
