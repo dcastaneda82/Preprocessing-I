@@ -154,7 +154,7 @@ body .main .titleName {
   padding: 60px 0 15px 0;
 }
 body .main .titleName h1 {
-  font-size: 7rem;
+  font-size: 3.7rem;
   font-family: 'Cinzel', serif;
   text-align: center;
   color: white;
@@ -204,7 +204,7 @@ body .main .titleName h1 {
 body .main .titleName h2 {
   text-align: center;
   font-family: 'Press Start 2P', cursive;
-  font-size: 1.3rem;
+  font-size: 0.8rem;
   color: #ffffff;
   animation: fadein 5s;
   -moz-animation: fadein 5s;
