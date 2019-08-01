@@ -1,0 +1,250 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+/* My code*/
+.Sykes {
+  background-image: linear-gradient(white, white, #006dac);
+  display: flex;
+  flex-direction: column;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  /* Firefox */
+  -webkit-animation: fadein 2s;
+  /* Safari and Chrome */
+  -o-animation: fadein 2s;
+  /* Opera */
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (min-width: 800px) {
+  .Sykes {
+    width: 100%;
+  }
+}
+.Sykes .sykeslogo {
+  margin: 30px 0 0 -1px;
+}
+@media (min-width: 800px) {
+  .Sykes .sykeslogo {
+    width: 45%;
+    align-self: center;
+  }
+}
+.Sykes .jobInfo {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin: 4rem 0 0 0;
+}
+.Sykes .jobInfo h1 {
+  font-size: 1.3rem;
+  font-family: 'Nunito', sans-serif;
+  align-self: center;
+  margin: 0 0 0 0;
+}
+@media (min-width: 800px) {
+  .Sykes .jobInfo h1 {
+    margin: 0 0 0 0;
+    font-size: 4.3rem;
+  }
+}
+.Sykes .jobInfo h2 {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1.3rem;
+  align-self: center;
+  border-top: double;
+  margin: 10px 0 0 0;
+  padding: 10px 0 0 0;
+}
+@media (min-width: 800px) {
+  .Sykes .jobInfo h2 {
+    font-size: 3rem;
+    padding: 10px 60px 0 60px;
+    margin: 20px 0 0 0;
+  }
+}
+.Sykes .duties {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 1.5rem;
+  color: #006dac;
+  margin: 20px;
+}
+.Sykes .duties li {
+  margin: 10px;
+  text-shadow: white 1px 0 10px;
+}
+@media (min-width: 800px) {
+  .Sykes .duties {
+    font-size: 3.3rem;
+    margin: 50px 0 0 0;
+    padding: 25px 0px 0 15px;
+  }
+}

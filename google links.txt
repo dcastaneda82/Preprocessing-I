@@ -1,0 +1,17 @@
+<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Caveat|Cinzel|Fira+Sans|Inconsolata|Julius+Sans+One|Maven+Pro|Montserrat|Mukta|Nunito|Oxygen|Playfair+Display+SC|Press+Start+2P|Varela+Round|Work+Sans&display=swap" rel="stylesheet">
+
+font-family: 'Montserrat', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Work Sans', sans-serif;
+font-family: 'Inconsolata', monospace;
+font-family: 'Oxygen', sans-serif;
+font-family: 'Varela Round', sans-serif;
+font-family: 'Mukta', sans-serif;
+font-family: 'Maven Pro', sans-serif;
+font-family: 'Cinzel', serif;
+font-family: 'Caveat', cursive;
+font-family: 'Alegreya Sans SC', sans-serif;
+font-family: 'Playfair Display SC', serif;
+font-family: 'Julius Sans One', sans-serif;
+font-family: 'Press Start 2P', cursive;
