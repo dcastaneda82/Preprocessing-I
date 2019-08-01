@@ -240,9 +240,9 @@ body {
   display: flex;
   flex-direction: column;
   font-family: 'Varela Round', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   color: #0011ff;
-  margin: 20px;
+  margin: 30px;
 }
 .gwire .duties li {
   margin: 10px;
@@ -257,4 +257,16 @@ body {
   .gwire .duties {
     font-size: 3rem;
   }
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  background-color: #db1919;
+}
+.buttons a,
+.buttons button {
+  padding: 0 5px 0 5px;
+  font-size: 1.7rem;
+  border-radius: 15px 15px 0 0;
+  width: 100%;
 }

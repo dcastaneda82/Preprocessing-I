@@ -248,3 +248,15 @@ body {
     font-size: 2.8rem;
   }
 }
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  background-color: #c837f5;
+}
+.buttons a,
+.buttons button {
+  padding: 0 5px 0 5px;
+  font-size: 1.7rem;
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+}
